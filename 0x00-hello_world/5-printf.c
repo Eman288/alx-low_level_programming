@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * main =  a C program that prints a line using printf
- * Return: 0 (Success)
- */
+*main - Entry point
+*Return: Always 0 (Success)
+*/
+
 
 int main(void)
 {
