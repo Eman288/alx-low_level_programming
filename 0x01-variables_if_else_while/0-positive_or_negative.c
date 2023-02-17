@@ -2,9 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main - print whether the number stored in is positive or negative
- * Return: 0 (Success)
- */
+/**
+*main - Entry point
+*Return: Always 0 (Success)
+*/
+
 int main(void)
 {
 	int n;
