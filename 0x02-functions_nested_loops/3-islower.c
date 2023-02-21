@@ -6,10 +6,10 @@
 
 int _islower(int c)
 {
-	if (n >= 65 && n <= 90)
+	if (c >= 65 && c <= 90)
 	{
 		return (0);
-	} else if (n >= 97 && n <= 122)
+	} else if (c >= 97 && c <= 122)
 	{
 		return (1);
 	}
