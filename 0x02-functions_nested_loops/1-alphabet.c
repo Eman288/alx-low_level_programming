@@ -1,4 +1,3 @@
-#include <instd.h>
 #include "main.h"
 /**
 *main - a function that prints the alphabet,followed by a new line.
@@ -14,5 +13,4 @@ void print_alphabet(void)
                         c++;
                 }
         _putchar('\n');
-}
-~          
+}          
