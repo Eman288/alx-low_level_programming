@@ -10,6 +10,8 @@ void print_triangle(int size)
 
 	n = size - 1;
 	b = size;
+	if (size <= 0)
+	{
 	while (size > 0)
 	{
 		m = n;
@@ -27,5 +29,6 @@ void print_triangle(int size)
 		n--;
 		size--;
 		_putchar('\n');
+	}
 	}
 }
