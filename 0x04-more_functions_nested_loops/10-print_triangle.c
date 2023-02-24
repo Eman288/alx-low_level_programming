@@ -12,6 +12,10 @@ void print_triangle(int size)
 	b = size;
 	if (size <= 0)
 	{
+		_putchar('\n');
+	}
+	else
+	{
 	while (size > 0)
 	{
 		m = n;
