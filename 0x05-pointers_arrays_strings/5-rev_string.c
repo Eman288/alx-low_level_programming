@@ -19,7 +19,7 @@ void rev_string(char *s)
 	}
 	v = s;
 	v--;
-	for (k = 0; k <= n / 2; k++)
+	for (k = 0; k < n / 2; k++)
 	{
 		t = *v;
 		*v = *m;
