@@ -10,6 +10,10 @@ void print_array(int *a, int n)
 {
 	int m;
 
+	if (n < 0)
+	{
+		n *= -1;
+	}
 	for (m = 0; m < n; m++)
 	{
 		if (m != n - 1 && m != 0)
