@@ -20,7 +20,7 @@ char *cap_string(char *n)
 		{
 			m = 0;
 		}
-		if (m == 0)
+		else if (m == 0)
 		{
 			if (*n >= 97 && *n <= 122)
 			{
