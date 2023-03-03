@@ -8,24 +8,24 @@
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int m, k;
+	int m;
 
 	char *s;
 
 	s = dest;
 	m = 0;
-	k = n;
-	while (*src != '\0' && n != 0)
+	while (*src != '\0' && m < n)
 	{
 		*dest = *src;
 		src++;
 		dest++;
 		m++;
-		n--;
 	}
-	if (k >= m)
+	while (m < n)
 	{
 		*dest = '\0';
+		dest++;
+		m++;
 	}
 	return (s);
 }
