@@ -18,6 +18,7 @@ int div(int n, int m, int s)
 		s++;
 	}
 	div(n, m + 1, s);
+	return;
 }
 int is_prime_number(int n)
 {
