@@ -1,55 +1,79 @@
 #include <stdio.h>
 #include "main.h"
-#include <math.h>
-/**
-*atoi - a conversion function
-*@s: a char
-*Return: Always 0 (Success)
-*/
-int atoi(char *s)
+int _atoi(char *s)
+		
 {
-	int i;
+		
+	int i, d, n, len, f, digit;
+		
 
-    	i=0;
-    	while (s[i] != '\0')
+		
+	i = 0;
+		
+	d = 0;
+		
+	n = 0;
+		
+	len = 0;
+		
+	f = 0;
+		
+	digit = 0;
+		
+
+		
+	while (s[len] != '\0')
+		
+		len++;
+		
+
+		
+	while (i < len && f == 0)
+		
 	{
+		
+		if (s[i] == '-')
+		
+			++d;
+		
+
+		
+		if (s[i] >= '0' && s[i] <= '9')
+		
+		{
+		
+			digit = s[i] - '0';
+		
+			if (d % 2)
+		
+				digit = -digit;
+		
+			n = n * 10 + digit;
+		
+			f = 1;
+		
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+		
+				break;
+		
+			f = 0;
+		
+		}
+		
 		i++;
+		
 	}
-	if (s[0] == '-')
-	{
-        	i--;
-        	int n, m;
+		
 
-		n =0;
-        	int c;
+		
+	if (f == 0)
+		
+		return (0);
+		
 
-       		 m = 0;
-		 while (i != 0)
-		 {
-			 c = s[i] - 48;
-            		n += c * pow(10,m);
-            		m++;
-            		i--;
-        	}
-		 return (n * -1);
-	}
-	else
-	{
-        	int n, m;
-
-        	n =0;
-       		int c;
-
-       		 m = 0;
-		 while (i != 0)
-		 {
-            		c = s[i-1] - 48;
-           		 n += c * pow(10,m);
-           		 m++;
-           		 i--;
-        	}
-      		 return (n);
-	}
+		
+	return (n);
+		
 }
 /**
 *main - Entry point
