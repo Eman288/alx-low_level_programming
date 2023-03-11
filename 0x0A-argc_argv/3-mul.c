@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include "main.h"
+/**
+*_atoi - Entry point
+*@s: a char
+*Return: Always 0 (Success)
+*/
+
 int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
