@@ -34,7 +34,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	int n, i, j;
+	int n;
+
+	int i;
+
+	int j;
 
 	char *s;
 
