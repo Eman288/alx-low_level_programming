@@ -8,7 +8,7 @@
 */
 int count(char *s)
 {
-	int n;
+	unsigned int n;
 
 	n = 0;
 	while (*s != '\0')
@@ -34,11 +34,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	int n;
+	unsigned int n;
 
-	int i;
+	unsigned int i;
 
-	int j;
+	unsigned int j;
 
 	char *s;
 
