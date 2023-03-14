@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+/**
+*alloc_grid - Entry point
+*@width: a num
+*@height: a num
+*Return: Always 0 (Success)
+*/
+
 int **alloc_grid(int width, int height)
 {
 int **grid;
