@@ -6,17 +6,17 @@
 *@s: a char
 *Return: Always 0 (Success)
 */
-int count(char *s)
+int count(char *u)
 {
-	unsigned int n;
+	unsigned int m;
 
-	n = 0;
-	while (*s != '\0')
+	m = 0;
+	while (*u != '\0')
 	{
-		n++;
-		s++;
+		m++;
+		u++;
 	}
-	return (n);
+	return (m);
 }
 /**
 *str_concat - a function that concatenates two strings.
