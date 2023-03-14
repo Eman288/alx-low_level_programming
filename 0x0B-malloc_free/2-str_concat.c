@@ -2,7 +2,54 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*main - Entry point
+*count - Entry point
+*@s: a char
 *Return: Always 0 (Success)
 */
+int count(char *s)
+{
+	int n;
 
+	n = 0;
+	while (*s != '\0')
+	{
+		n++;
+		s++;
+	}
+	return (n);
+}
+/**
+*str_concat - a function that concatenates two strings.
+*@s1: a char
+*@s2: a char
+*Return: Always 0 (Success)
+*/
+char *str_concat(char *s1, char *s2)
+{
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	int n, i, j;
+
+	char *s;
+
+	n = count(s1) + count(s2) + 1;
+	s = (char *) malloc(n * sizeof(char));
+	if (s == 0)
+	{
+		return (NULL);
+	}
+	for (i = 0; *(s1 + i) != '\0'; i++)
+		*(s + i) = *(s1 + i);
+	for (j = 0; *(s2 + j) != '\0'; j++)
+	{
+		*(s + i) = *(s2 + j);
+		i++;
+	}
+	return (s);
+}
