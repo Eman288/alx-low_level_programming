@@ -20,12 +20,12 @@ char *_strdup(char *str)
 		str++;
 	}	
 	s = malloc(n * sizeof(char));
-	if (n == 0 || *s == NULL)
+	if (n == 0 || s == NULL)
 	{
 		return (NULL);
 	}
 	str = s;
-	while (c != '\0')
+	while (*c != '\0')
 	{
 		*s = *c;
 		s++;
