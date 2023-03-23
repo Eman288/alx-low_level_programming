@@ -3,7 +3,8 @@
 /**
 *sum_them_all - a function that returns the sum of all its parameters.
 *@n: the number of parameters
-*Return: Always 0 (Success)
+*Return: If n == 0 - 0.
+*        Otherwise - the sum of all parameters.
 */
 int sum_them_all(const unsigned int n, ...)
 {
