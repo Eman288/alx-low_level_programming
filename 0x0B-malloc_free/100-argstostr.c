@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 
 	int m;
 
-	char *s;
+	char *v;
 
 	r = 0;
 	for (i = 0; i < ac; i++)
@@ -31,21 +31,21 @@ char *argstostr(int ac, char **av)
 	}
 	r += ac;
 	m = 0;
-	s = malloc(sizeof(char) * r + 1);
-	if (s == NULL)
+	v = malloc(sizeof(char) * r + 1);
+	if (v == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
-			s[m] = av[i][j];
+			v[m] = av[i][j];
 			m++;
 		}
-		if (s[m] == '\0')
+		if (v[m] == '\0')
 		{
-			s[m] = '\n';
+			v[m] = '\n';
 			m++;
 	}
 	}
-	return (s);
+	return (v);
 }
