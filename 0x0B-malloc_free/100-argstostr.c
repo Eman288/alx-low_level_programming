@@ -11,7 +11,13 @@ char *argstostr(int ac, char **av)
 {
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	int n, i, j, m;
+	int n;
+
+	int i;
+
+	int j;
+
+	int m;
 
 	char *s;
 
@@ -39,7 +45,7 @@ char *argstostr(int ac, char **av)
 		{
 			s[m] = '\n';
 			m++;
-		}
+	}
 	}
 	return (s);
 }
