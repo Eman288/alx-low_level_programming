@@ -18,6 +18,7 @@ int divv(int n, int m, int s)
 		s++;
 	}
 	divv(n, m + 1, s);
+	return (s);
 }
 int is_prime_number(int n)
 {
