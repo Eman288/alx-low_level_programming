@@ -1,6 +1,5 @@
 #include "main.h"
 /**
-*is_prime_number - Write a function that returns
 *divv - a fun that helps
 *@m: a num
 *@s: a num
@@ -17,9 +16,13 @@ int divv(int n, int m, int s)
 	{
 		s++;
 	}
-	divv(n, m + 1, s);
-	return (s);
+	return (divv(n, m + 1, s));
 }
+/**
+*is_prime_number - Write a function that returns
+*@n: a num
+*Return: Always 0 (Success)
+*/
 int is_prime_number(int n)
 {
 	if (divv(n, 1, 0) == 2)
