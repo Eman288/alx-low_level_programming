@@ -1,21 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stdio.h>
 #include <stdlib.h>
-/**
- * list_t - struct for a linked list
- * @str: th string
- * @len: lenght
- * @next: the address of next node
- */
-typedef struct list_t
-{
-	char *str;
-
-	int len;
-
-	struct list_t *next;
-}list_t;
 /**
 *print_list - to print a linked list
 *@h: the node
