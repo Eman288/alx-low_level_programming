@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 
 	int m, v;
 
-	m = 32768;
+	m = 524288;
 	flag  = false;
 	v = n;
 	if (n == 0)
