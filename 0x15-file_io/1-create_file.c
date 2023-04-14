@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * create_file - Create a function that creates a file.
+ *create_file - Create a function that creates a file.
  *@filename: the file's name
  *@text_content: the file's content
+ *Return: 1 if success
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -20,7 +21,7 @@ int create_file(const char *filename, char *text_content)
 			n++;
 		}
 	}
-	fp = open(filename, O_CREAT | O_RDWR, 0600);
+	fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	w = write(fp, text_content, n);
 	if (fp == -1 || w == -1)
 	{
