@@ -20,12 +20,8 @@ void print_binary(unsigned long int n)
 			c++;
 		}
 		else if (c)
-		{
 			_putchar('0');
-		}
 	}
 	if (!c)
-	{
-		_puchar('0');
-	}
+		_putchar('0');
 }
