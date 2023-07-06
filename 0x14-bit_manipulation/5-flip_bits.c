@@ -27,5 +27,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 			c++;
 		}
 	}
-	return (b / 2);
+	return (b >> 1);
 }
