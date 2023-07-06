@@ -17,6 +17,7 @@ void print_binary(unsigned long int n)
 		if (num == 1)
 		{
 			_putchar('1');
+			c++;
 		}
 		else if (c)
 		{
