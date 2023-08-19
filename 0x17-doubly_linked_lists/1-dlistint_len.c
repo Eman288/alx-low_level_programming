@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-*print_dlistint - a function that prints all the elements of a dlistint_t list
+*dlistint_len - a function that returns the number of elements
 *@h: the head
 *Return: Always 0 (Success)
 */
