@@ -10,8 +10,14 @@ hash_node_t *create_element(const char *key, const char *value)
 	hash_node_t *ele;
 
 	ele = malloc(sizeof(hash_node_t *));
+	if (ele == NULL)
+		return (NULL);
 	ele->key = (char *) malloc(strlen(key) + 1);
+	if (ele->key == NULL)
+		return (NULL);
 	ele->value = (char *) malloc(strlen(value) + 1);
+	if (ele->value == NULL)
+		return (NULL);
 	strcpy(ele->key, key);
 	strcpy(ele->value, value);
 	return (ele);
