@@ -31,7 +31,7 @@ int binary_search(int *array, size_t size, int value)
 		i = (e + s) / 2;
 		if (array[i] == value)
 			return (i);
-		else if (i != 0 && array[i] > value)
+		else if (array[i] > value)
 			e = i - 1;
 		else
 			s = i + 1;
